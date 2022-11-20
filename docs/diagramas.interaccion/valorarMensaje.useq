@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.3" icons="true" automaticImage="PNG" generate-combined-fragments="true">  
+  <object id="1" language="java" name="maristmessage.vista.ValorarMensaje" project="MaristMessage" 
+    file="/MaristMessage/src/maristmessage/vista/ValorarMensaje.java" binary="false" label="valorarMensaje" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="293" y="0"/>    
+    <execution id="2">      
+      <position height="805" width="0" x="0" y="332"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="742" width="0" x="0" y="374"/>    
+    </execution>  
+  </object>  
+  <object id="7" language="java" name="maristmessage.controlador.Coordinador" project="MaristMessage" 
+    file="/MaristMessage/src/maristmessage/controlador/Coordinador.java" binary="false" label="coordinadorVentana" 
+    type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="6">      
+      <position height="690" width="0" x="0" y="405"/>    
+    </execution>  
+  </object>  
+  <object id="10" language="java" name="maristmessage.modelo.Logica" project="MaristMessage" 
+    file="/MaristMessage/src/maristmessage/modelo/Logica.java" binary="false" label="logica" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="9">      
+      <position height="648" width="0" x="0" y="426"/>    
+    </execution>  
+  </object>  
+  <object id="19" language="java" name="maristmessage.modelo.dao.ValoracionDao" project="MaristMessage" 
+    file="/MaristMessage/src/maristmessage/modelo/dao/ValoracionDao.java" binary="false" label="valoracion" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="12">      
+      <position height="21" width="0" x="0" y="490"/>    
+    </execution>    
+    <execution id="14">      
+      <position height="315" width="0" x="0" y="532"/>    
+    </execution>  
+  </object>  
+  <object id="26" language="java" name="maristmessage.modelo.conexion.Conexion" project="MaristMessage" 
+    file="/MaristMessage/src/maristmessage/modelo/conexion/Conexion.java" binary="false" label="conex" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="21">      
+      <position height="21" width="0" x="0" y="553"/>    
+    </execution>    
+    <execution id="23">      
+      <position height="21" width="0" x="0" y="595"/>    
+    </execution>    
+    <execution id="25">      
+      <position height="21" width="0" x="0" y="805"/>    
+    </execution>  
+  </object>  
+  <object id="27" language="java" name="maristmessage.controlador.Coordinador" project="MaristMessage" 
+    file="/MaristMessage/src/maristmessage/controlador/Coordinador.java" binary="false" label="coordinador" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="16">      
+      <position height="21" width="0" x="0" y="990"/>    
+    </execution>    
+    <execution id="18">      
+      <position height="21" width="0" x="0" y="1032"/>    
+    </execution>  
+  </object>  
+  <combined-fragment id="28" interaction-operator="OPT">    
+    <interaction-operand id="29" constraint="it &gt;= 0 &amp;&amp; it &lt;= 5">      
+      <fragment refId="24"/>      
+      <fragment refId="13"/>      
+      <fragment refId="11"/>      
+      <fragment refId="15"/>      
+      <fragment refId="22"/>      
+      <fragment refId="20"/>      
+      <fragment refId="17"/>      
+      <fragment refId="30"/>    
+    </interaction-operand>  
+  </combined-fragment>  
+  <message id="3" operation="valorarMensaje(int):void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="valorarMensaje(int):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="8" operation="validarValoracionMensaje(int):void" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="9"/>  
+  </message>  
+  <message id="11" operation="ValoracionDao()" asynchronous="false">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="12"/>  
+  </message>  
+  <message id="13" 
+    operation="setValoracion(maristmessage.modelo.vo.Conversacion,maristmessage.modelo.vo.Usuario,int):void" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="14"/>  
+  </message>  
+  <message id="15" operation="getConversacion():maristmessage.modelo.vo.Conversacion" asynchronous="false">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="16"/>  
+  </message>  
+  <message id="17" operation="getUsuario():maristmessage.modelo.vo.Usuario" asynchronous="false">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="18"/>  
+  </message>  
+  <message id="20" operation="Conexion()" asynchronous="false">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="21"/>  
+  </message>  
+  <message id="22" operation="getConnection():java.sql.Connection" asynchronous="false">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="23"/>  
+  </message>  
+  <message id="24" operation="closeConnection():boolean" asynchronous="false">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="25"/>  
+  </message>
+</sequence-diagram>

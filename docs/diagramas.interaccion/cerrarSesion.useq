@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.3" icons="true" automaticImage="PNG" generate-combined-fragments="true">  
+  <object id="1" language="java" name="maristmessage.vista.Principal" project="MaristMessage" 
+    file="/MaristMessage/src/maristmessage/vista/Principal.java" binary="false" label="principal" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="95" y="0"/>    
+    <execution id="2">      
+      <position height="401" width="0" x="0" y="197"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="338" width="0" x="0" y="239"/>    
+    </execution>    
+    <execution id="10">      
+      <position height="21" width="0" x="0" y="535"/>    
+    </execution>  
+  </object>  
+  <object id="11" language="java" name="maristmessage.controlador.Coordinador" project="MaristMessage" 
+    file="/MaristMessage/src/maristmessage/controlador/Coordinador.java" binary="false" label="coordinadorVentana" 
+    type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="6">      
+      <position height="105" width="0" x="0" y="298"/>    
+    </execution>    
+    <execution id="8">      
+      <position height="21" width="0" x="0" y="424"/>    
+    </execution>  
+  </object>  
+  <object id="14" language="java" name="maristmessage.modelo.Logica" project="MaristMessage" 
+    file="/MaristMessage/src/maristmessage/modelo/Logica.java" binary="false" label="logica" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="13">      
+      <position height="63" width="0" x="0" y="319"/>    
+    </execution>  
+  </object>  
+  <object id="17" language="java" name="maristmessage.controlador.Coordinador" project="MaristMessage" 
+    file="/MaristMessage/src/maristmessage/controlador/Coordinador.java" binary="false" label="coordinador" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="16">      
+      <position height="21" width="0" x="0" y="340"/>    
+    </execution>  
+  </object>  
+  <combined-fragment id="18" interaction-operator="OPT">    
+    <interaction-operand id="19" constraint="seleccion == 0">      
+      <fragment refId="5"/>      
+      <fragment refId="7"/>      
+      <fragment refId="12"/>      
+      <fragment refId="15"/>    
+    </interaction-operand>  
+  </combined-fragment>  
+  <combined-fragment id="20" interaction-operator="OPT">    
+    <interaction-operand id="21" constraint="seleccion == 1">      
+      <fragment refId="9"/>    
+    </interaction-operand>  
+  </combined-fragment>  
+  <message id="3" operation="cerrarSesion(int):void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="cerrarSesion():void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" operation="mostrarVentanaLogin():void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="9" operation="setDefaultCloseOperation(int):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="12" operation="validarCierreSesion():void" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>  
+  <message id="15" operation="setUsuario(maristmessage.modelo.vo.Usuario):void" asynchronous="false">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="16"/>  
+  </message>
+</sequence-diagram>

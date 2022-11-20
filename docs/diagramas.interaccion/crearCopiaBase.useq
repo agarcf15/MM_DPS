@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.3" icons="true" automaticImage="PNG" generate-combined-fragments="true">  
+  <object id="1" language="java" name="maristmessage.vista.Principal" project="MaristMessage" 
+    file="/MaristMessage/src/maristmessage/vista/Principal.java" binary="false" label="principal" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="52" y="0"/>    
+    <execution id="2">      
+      <position height="520" width="0" x="0" y="182"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="457" width="0" x="0" y="224"/>    
+    </execution>  
+  </object>  
+  <object id="7" language="java" name="maristmessage.controlador.Coordinador" project="MaristMessage" 
+    file="/MaristMessage/src/maristmessage/controlador/Coordinador.java" binary="false" label="coordinadorVentana" 
+    type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="6">      
+      <position height="405" width="0" x="0" y="255"/>    
+    </execution>  
+  </object>  
+  <object id="10" language="java" name="maristmessage.modelo.Logica" project="MaristMessage" 
+    file="/MaristMessage/src/maristmessage/modelo/Logica.java" binary="false" label="logica" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="9">      
+      <position height="363" width="0" x="0" y="276"/>    
+    </execution>  
+  </object>  
+  <object id="15" language="java" name="maristmessage.modelo.dao.CopiaBDDao" project="MaristMessage" 
+    file="/MaristMessage/src/maristmessage/modelo/dao/CopiaBDDao.java" binary="false" label="copiaBDDao" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="12">      
+      <position height="21" width="0" x="0" y="297"/>    
+    </execution>    
+    <execution id="14">      
+      <position height="279" width="0" x="0" y="339"/>    
+    </execution>  
+  </object>  
+  <object id="26" language="java" name="java.io.FileOutputStream" project="MaristMessage" 
+    file="C:/Program Files/Java/jre1.8.0_231/lib/rt.jar" binary="true" label="fos" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="17">      
+      <position height="21" width="0" x="0" y="360"/>    
+    </execution>    
+    <execution id="21">      
+      <position height="21" width="0" x="0" y="482"/>    
+    </execution>    
+    <execution id="25">      
+      <position height="21" width="0" x="0" y="576"/>    
+    </execution>  
+  </object>  
+  <object id="27" language="java" name="java.io.InputStream" project="MaristMessage" 
+    file="C:/Program Files/Java/jre1.8.0_231/lib/rt.jar" binary="true" label="is" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="19">      
+      <position height="21" width="0" x="0" y="402"/>    
+    </execution>    
+    <execution id="23">      
+      <position height="21" width="0" x="0" y="524"/>    
+    </execution>  
+  </object>  
+  <combined-fragment id="28" interaction-operator="LOOP">    
+    <interaction-operand id="29" constraint="while: leido &gt; 0">      
+      <fragment refId="22"/>      
+      <fragment refId="20"/>    
+    </interaction-operand>  
+  </combined-fragment>  
+  <message id="3" operation="crearCopiaBase():void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="crearCopiaBase():void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="8" operation="crearCopiaBD():void" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="9"/>  
+  </message>  
+  <message id="11" operation="CopiaBDDao()" asynchronous="false">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="12"/>  
+  </message>  
+  <message id="13" operation="realizarCopia():void" asynchronous="false">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="14"/>  
+  </message>  
+  <message id="16" operation="FileOutputStream(java.lang.String)" asynchronous="false">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>  
+  <message id="18" operation="read(byte[]):int" asynchronous="false">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="19"/>  
+  </message>  
+  <message id="20" operation="write(byte[],int,int):void" asynchronous="false">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="21"/>  
+  </message>  
+  <message id="22" operation="read(byte[]):int" asynchronous="false">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="23"/>  
+  </message>  
+  <message id="24" operation="close():void" asynchronous="false">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="25"/>  
+  </message>
+</sequence-diagram>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.3" icons="true" automaticImage="PNG" generate-combined-fragments="true">  
+  <object id="1" language="java" name="maristmessage.vista.CrearUsuario" project="MaristMessage" 
+    file="/MaristMessage/src/maristmessage/vista/CrearUsuario.java" binary="false" label="crearUsuario" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="132" y="0"/>    
+    <execution id="2">      
+      <position height="1488" width="0" x="0" y="292"/>    
+    </execution>  
+  </object>  
+  <object id="5" language="java" name="maristmessage.vista.CrearUsuario" project="MaristMessage" 
+    file="/MaristMessage/src/maristmessage/vista/CrearUsuario.java" binary="false" label="crearUsuario1" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="4">      
+      <position height="1446" width="0" x="0" y="313"/>    
+    </execution>  
+  </object>  
+  <object id="22" language="java" name="maristmessage.modelo.vo.Usuario" project="MaristMessage" 
+    file="/MaristMessage/src/maristmessage/modelo/vo/Usuario.java" binary="false" label="usuario" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="7">      
+      <position height="21" width="0" x="0" y="334"/>    
+    </execution>    
+    <execution id="9">      
+      <position height="21" width="0" x="0" y="376"/>    
+    </execution>    
+    <execution id="11">      
+      <position height="21" width="0" x="0" y="460"/>    
+    </execution>    
+    <execution id="13">      
+      <position height="21" width="0" x="0" y="544"/>    
+    </execution>    
+    <execution id="15">      
+      <position height="21" width="0" x="0" y="628"/>    
+    </execution>    
+    <execution id="17">      
+      <position height="21" width="0" x="0" y="712"/>    
+    </execution>    
+    <execution id="23">      
+      <position height="21" width="0" x="0" y="1112"/>    
+    </execution>    
+    <execution id="24">      
+      <position height="21" width="0" x="0" y="1154"/>    
+    </execution>    
+    <execution id="25">      
+      <position height="21" width="0" x="0" y="1196"/>    
+    </execution>    
+    <execution id="26">      
+      <position height="21" width="0" x="0" y="1238"/>    
+    </execution>    
+    <execution id="27">      
+      <position height="21" width="0" x="0" y="1322"/>    
+    </execution>    
+    <execution id="28">      
+      <position height="21" width="0" x="0" y="1364"/>    
+    </execution>  
+  </object>  
+  <object id="29" language="java" name="maristmessage.controlador.Coordinador" project="MaristMessage" 
+    file="/MaristMessage/src/maristmessage/controlador/Coordinador.java" binary="false" label="coordinadorVentana" 
+    type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="19">      
+      <position height="820" width="0" x="0" y="796"/>    
+    </execution>    
+    <execution id="21">      
+      <position height="21" width="0" x="0" y="1717"/>    
+    </execution>  
+  </object>  
+  <object id="32" language="java" name="maristmessage.modelo.Logica" project="MaristMessage" 
+    file="/MaristMessage/src/maristmessage/modelo/Logica.java" binary="false" label="logica" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="31">      
+      <position height="778" width="0" x="0" y="817"/>    
+    </execution>  
+  </object>  
+  <object id="37" language="java" name="maristmessage.modelo.dao.UsuarioDao" project="MaristMessage" 
+    file="/MaristMessage/src/maristmessage/modelo/dao/UsuarioDao.java" binary="false" label="usuarioDao" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="34">      
+      <position height="21" width="0" x="0" y="881"/>    
+    </execution>    
+    <execution id="36">      
+      <position height="651" width="0" x="0" y="923"/>    
+    </execution>  
+  </object>  
+  <object id="52" language="java" name="maristmessage.modelo.conexion.Conexion" project="MaristMessage" 
+    file="/MaristMessage/src/maristmessage/modelo/conexion/Conexion.java" binary="false" label="conex" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="39">      
+      <position height="21" width="0" x="0" y="944"/>    
+    </execution>    
+    <execution id="41">      
+      <position height="21" width="0" x="0" y="986"/>    
+    </execution>    
+    <execution id="51">      
+      <position height="21" width="0" x="0" y="1532"/>    
+    </execution>  
+  </object>  
+  <object id="53" language="java" name="maristmessage.modelo.vo.Rol" project="MaristMessage" 
+    file="/MaristMessage/src/maristmessage/modelo/vo/Rol.java" binary="false" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="49">      
+      <position height="21" width="0" x="0" y="1406"/>    
+    </execution>  
+  </object>  
+  <combined-fragment id="54" interaction-operator="OPT">    
+    <interaction-operand id="55" constraint="!usuario.getNombreUsuario().isEmpty()">      
+      <fragment refId="50"/>      
+      <fragment refId="47"/>      
+      <fragment refId="46"/>      
+      <fragment refId="48"/>      
+      <fragment refId="42"/>      
+      <fragment refId="43"/>      
+      <fragment refId="40"/>      
+      <fragment refId="45"/>      
+      <fragment refId="35"/>      
+      <fragment refId="33"/>      
+      <fragment refId="38"/>      
+      <fragment refId="44"/>    
+    </interaction-operand>  
+  </combined-fragment>  
+  <message id="3" operation="crearUsuario():void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="6" operation="Usuario()" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="7"/>  
+  </message>  
+  <message id="8" operation="setNombre(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="9"/>  
+  </message>  
+  <message id="10" operation="setApellidos(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="11"/>  
+  </message>  
+  <message id="12" operation="setRol(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>  
+  <message id="14" operation="setNombreUsuario(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="15"/>  
+  </message>  
+  <message id="16" operation="setContrasenya(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>  
+  <message id="18" operation="registrarUsuario(maristmessage.modelo.vo.Usuario):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="19"/>  
+  </message>  
+  <message id="20" operation="mostrarVentanaPrincipal():void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="21"/>  
+  </message>  
+  <message id="30" operation="validarRegistro(maristmessage.modelo.vo.Usuario):void" asynchronous="false">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="31"/>  
+  </message>  
+  <message id="33" operation="UsuarioDao()" asynchronous="false">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="34"/>  
+  </message>  
+  <message id="35" operation="registrarUsuario(maristmessage.modelo.vo.Usuario):void" asynchronous="false">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="36"/>  
+  </message>  
+  <message id="38" operation="Conexion()" asynchronous="false">    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="39"/>  
+  </message>  
+  <message id="40" operation="getConnection():java.sql.Connection" asynchronous="false">    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="41"/>  
+  </message>  
+  <message id="42" operation="getNombreUsuario():java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="23"/>  
+  </message>  
+  <message id="43" operation="getContrasenya():java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="24"/>  
+  </message>  
+  <message id="44" operation="getNombre():java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="25"/>  
+  </message>  
+  <message id="45" operation="getApellidos():java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="26"/>  
+  </message>  
+  <message id="46" operation="getNombreUsuario():java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="27"/>  
+  </message>  
+  <message id="47" operation="getRol():maristmessage.modelo.vo.Rol" asynchronous="false">    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="28"/>  
+  </message>  
+  <message id="48" operation="getName():java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="49"/>  
+  </message>  
+  <message id="50" operation="closeConnection():boolean" asynchronous="false">    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="51"/>  
+  </message>
+</sequence-diagram>
